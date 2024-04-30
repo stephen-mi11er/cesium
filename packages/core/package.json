@@ -1,0 +1,17 @@
+{
+  "name": "@beer-abacus/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "sst": "^2.41.5",
+    "vitest": "^1.5.2"
+  },
+  "dependencies": {
+    "zod": "^3.23.5"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "cesium",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "branch": "create-branches-cli",
+    "commit": "cz",
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.2.0",
+    "@commitlint/cz-commitlint": "^19.2.0",
+    "@tsconfig/node18": "^18.2.4",
+    "aws-cdk-lib": "2.132.1",
+    "commitizen": "^4.3.0",
+    "constructs": "10.3.0",
+    "create-branches-cli": "^0.3.1",
+    "inquirer": "9",
+    "sst": "^2.41.5",
+    "typescript": "^5.4.5"
+  },
+  "workspaces": [
+    "packages/**/*"
+  ],
+  "packageManager": "yarn@3.6.2",
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}

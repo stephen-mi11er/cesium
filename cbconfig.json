@@ -1,0 +1,7 @@
+{
+  "branch_name_template": "<task_type>/<project_name>/<task_name>",
+  "project_names": ["mono", "website", "graphql"],
+  "task_types": ["feature", "bugfix", "hotfix", "chore"],
+  "task_name_delimiter": "_",
+  "auto_checkout": true
+}
