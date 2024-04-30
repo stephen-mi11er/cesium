@@ -8,6 +8,9 @@ export function website({ stack }: StackContext) {
                 logRetention: RetentionDays.FOUR_MONTHS
             }
         },
+        environment: {
+            PUBLIC_CESIUM_ACCESS_TOKEN: process.env.PUBLIC_CESIUM_ACCESS_TOKEN!
+        },
         path: 'packages/web/website',
     });
 
