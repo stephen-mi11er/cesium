@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
+<Layout title="Cesium Demo">
 	<main>
 		<div id="cesiumContainer"></div>
 	</main>
@@ -12,7 +12,7 @@ import Layout from '../layouts/Layout.astro';
 <script is:inline src="https://cesium.com/downloads/cesiumjs/releases/1.116/Build/Cesium/Cesium.js"></script>
 <link href="https://cesium.com/downloads/cesiumjs/releases/1.116/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
 
-<script>
+<script is:inline>
 	Cesium.Ion.defaultAccessToken = import.meta.env.PUBLIC_CESIUM_ACCESS_TOKEN;
 
 	// Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
