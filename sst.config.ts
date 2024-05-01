@@ -1,6 +1,6 @@
 import { SSTConfig } from "sst";
 import { RemovalPolicy } from 'aws-cdk-lib';
-import { website } from "./stacks/website";
+import { website, GraphqlStack } from "./stacks";
 
 export default {
   config(_input) {
@@ -20,8 +20,13 @@ export default {
       runtime: 'nodejs18.x',
       architecture: 'arm_64',
       environment: {
-        IS_PROD: (app.stage === 'prod').toString()
+        IS_PROD: (app.stage === 'prod').toString(),
+        GRAPHQL_API_KEY: process.env.GRAPHQL_API_KEY!,
       }
+    });
+
+    app.stack(GraphqlStack, {
+      terminationProtection: protectedStacks.includes(app.stage)
     });
 
     app.stack(website, {

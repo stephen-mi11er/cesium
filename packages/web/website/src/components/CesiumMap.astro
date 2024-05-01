@@ -1,7 +1,11 @@
 ---
+import type {RadarPoints} from "@cesium/core/models";
+import DataQueries from "./handlers/dataQueries";
 
+const dataQueries = new DataQueries();
+const radarPoints: RadarPoints[] = await dataQueries.FlightPath();
 ---
-<cesium-map id="cesiumContainer" data-access-token={import.meta.env.PUBLIC_CESIUM_ACCESS_TOKEN}/>
+<cesium-map id="cesiumContainer" data-access-token={import.meta.env.PUBLIC_CESIUM_ACCESS_TOKEN} data-radar-points={JSON.stringify(radarPoints)}/>
 
 <script is:inline>
 	class CesiumMap extends HTMLElement {
@@ -25,6 +29,20 @@
 					pitch: Cesium.Math.toRadians(-15.0),
 				}
 			});
+
+            // STEP 3 CODE (all points)
+            // These are all the radar points from this flight.
+            const flightData = JSON.parse(this.dataset.radarPoints);
+            // Create a point for each.
+            for (let i = 0; i < flightData.length; i++) {
+                const dataPoint = flightData[i];
+
+                viewer.entities.add({
+                    description: `Location: (${dataPoint.longitude}, ${dataPoint.latitude}, ${dataPoint.height})`,
+                    position: Cesium.Cartesian3.fromDegrees(dataPoint.longitude, dataPoint.latitude, dataPoint.height),
+                    point: { pixelSize: 10, color: Cesium.Color.RED }
+                });
+            }
 
 			async function load() {
 				const buildingTileset = await Cesium.createOsmBuildingsAsync();
