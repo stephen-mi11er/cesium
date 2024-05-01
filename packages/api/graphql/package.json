@@ -4,7 +4,6 @@
   "scripts": {
     "generate": "graphql-codegen"
   },
-  "packageManager": "yarn@3.6.0",
   "dependencies": {
     "@apollo/server": "^4.7.4",
     "@as-integrations/aws-lambda": "^2.0.1",
