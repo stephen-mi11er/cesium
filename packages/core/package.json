@@ -1,5 +1,5 @@
 {
-  "name": "@beer-abacus/core",
+  "name": "@cesium/core",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

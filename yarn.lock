@@ -1764,9 +1764,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beer-abacus/core@workspace:packages/core":
+"@cdklabs/tskb@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@cdklabs/tskb@npm:0.0.3"
+  checksum: a2e89c36b44402c3593f92d590c08ab56b887b9e7e448606616aa05033c96cdb16790717036039779a15992fa46ad7ae0804b882ef81c8961f2459d24677e66f
+  languageName: node
+  linkType: hard
+
+"@cesium/core@workspace:packages/core":
   version: 0.0.0-use.local
-  resolution: "@beer-abacus/core@workspace:packages/core"
+  resolution: "@cesium/core@workspace:packages/core"
   dependencies:
     "@types/node": ^20.12.7
     sst: ^2.41.5
@@ -1775,9 +1782,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beer-abacus/functions@workspace:packages/functions":
+"@cesium/functions@workspace:packages/functions":
   version: 0.0.0-use.local
-  resolution: "@beer-abacus/functions@workspace:packages/functions"
+  resolution: "@cesium/functions@workspace:packages/functions"
   dependencies:
     "@types/aws-lambda": ^8.10.137
     "@types/node": ^20.12.7
@@ -1785,13 +1792,6 @@ __metadata:
     vitest: ^1.5.2
   languageName: unknown
   linkType: soft
-
-"@cdklabs/tskb@npm:^0.0.3":
-  version: 0.0.3
-  resolution: "@cdklabs/tskb@npm:0.0.3"
-  checksum: a2e89c36b44402c3593f92d590c08ab56b887b9e7e448606616aa05033c96cdb16790717036039779a15992fa46ad7ae0804b882ef81c8961f2459d24677e66f
-  languageName: node
-  linkType: hard
 
 "@commitlint/config-conventional@npm:^19.2.0":
   version: 19.2.2
