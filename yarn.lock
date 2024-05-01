@@ -71,7 +71,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apollo/server@npm:^4.7.4":
+"@apollo/server@npm:^4.10.4":
   version: 4.10.4
   resolution: "@apollo/server@npm:4.10.4"
   dependencies:
@@ -226,14 +226,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@as-integrations/aws-lambda@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@as-integrations/aws-lambda@npm:2.0.1"
+"@as-integrations/aws-lambda@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@as-integrations/aws-lambda@npm:3.1.0"
   dependencies:
     "@types/aws-lambda": ^8.10.106
   peerDependencies:
     "@apollo/server": ^4.0.0
-  checksum: eec0407234c9f57a4fc8aafb3b1241e849b09481d7b720ec3485000fc0610adefe0caae904af9832ecba3695ecb5ddbcfe142e6aabd25c671a4078c294c75d56
+  checksum: a3b133577a1e3e46003bfebe69247550ac57fb0fc1252c18b0a28391a8fd1dd22f2c6330e6ce8c163b526d4dd31d43d9bbf74346df1f0087b5994c41d85044ef
   languageName: node
   linkType: hard
 
@@ -7136,7 +7136,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-scalars@npm:^1.22.4":
+"graphql-scalars@npm:^1.23.0":
   version: 1.23.0
   resolution: "graphql-scalars@npm:1.23.0"
   dependencies:
@@ -7173,15 +7173,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "graphql@workspace:packages/api/graphql"
   dependencies:
-    "@apollo/server": ^4.7.4
-    "@as-integrations/aws-lambda": ^2.0.1
-    graphql: ^16.6.0
-    graphql-scalars: ^1.22.4
+    "@apollo/server": ^4.10.4
+    "@as-integrations/aws-lambda": ^3.1.0
+    graphql: ^16.8.1
+    graphql-scalars: ^1.23.0
     typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
-"graphql@npm:^16.6.0":
+"graphql@npm:^16.8.1":
   version: 16.8.1
   resolution: "graphql@npm:16.8.1"
   checksum: 8d304b7b6f708c8c5cc164b06e92467dfe36aff6d4f2cf31dd19c4c2905a0e7b89edac4b7e225871131fd24e21460836b369de0c06532644d15b461d55b1ccc0
