@@ -5318,6 +5318,7 @@ __metadata:
     commitizen: ^4.3.0
     constructs: 10.3.0
     create-branches-cli: ^0.3.1
+    graphql: ^16.8.1
     inquirer: 9
     sst: ^2.41.5
     typescript: ^5.4.5
