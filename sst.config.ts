@@ -21,7 +21,7 @@ export default {
       architecture: 'arm_64',
       environment: {
         IS_PROD: (app.stage === 'prod').toString(),
-        GRAPHQL_API_KEY: process.env.GRAPHQL_API_KEY!,
+        GRAPHQL_API_KEY: process.env.GRAPHQL_API_KEY!
       }
     });
 
