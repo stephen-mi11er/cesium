@@ -25,8 +25,7 @@
     "typescript": "^5.4.5"
   },
   "workspaces": [
-    "packages/*",
-    "packages/*/*"
+    "packages/**/*"
   ],
   "packageManager": "yarn@3.6.2",
   "config": {

@@ -14,11 +14,11 @@ export function GraphqlStack({ stack }: StackContext): { graphqlApiUrl: string }
         routes: {
             'POST /': {
                 type: 'graphql',
-                function: 'packages/api/graphql/lambda.handler'
+                function: 'packages/graphql/lambda.handler'
             },
             'GET /': {
                 type: 'graphql',
-                function: 'packages/api/graphql/lambda.handler'
+                function: 'packages/graphql/lambda.handler'
             }
         },
     });
