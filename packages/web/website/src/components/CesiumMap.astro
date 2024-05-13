@@ -40,7 +40,7 @@ const radarPoints: RadarPoints[] = await dataQueries.FlightPath();
                 viewer.entities.add({
                     description: `Location: (${dataPoint.longitude}, ${dataPoint.latitude}, ${dataPoint.height})`,
                     position: Cesium.Cartesian3.fromDegrees(dataPoint.longitude, dataPoint.latitude, dataPoint.height),
-                    point: { pixelSize: 10, color: Cesium.Color.RED }
+                    point: { pixelSize: 10, color: Cesium.Color.BLUE }
                 });
             }
 
